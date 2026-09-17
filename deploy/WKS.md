@@ -5,7 +5,8 @@
 | 項目 | 值 |
 |------|----|
 | 網址 | https://cpadoc.beyondsearchai.com（繁中：`/tw/`） |
-| 存取控制 | NPM Access List 的 Basic Auth，帳號 `cpadoc`，密碼在 wks `/home/orz99/zoo/.env` 的 `CPADOC_BASIC_AUTH_PASSWORD` |
+| 存取控制 | 公開（2026-09-17 起 Proxy Host 設為 Publicly Accessible）。NPM 仍保留 Access List「cpadoc 內部」（Basic Auth，帳號 `cpadoc`，密碼在 wks `.env` 的 `CPADOC_BASIC_AUTH_PASSWORD`），要再鎖起來時選回它即可 |
+| 授權 | 上游 repo 沒有授權檔，但網站頁尾與主程式都標示 MIT；公開時保留頁尾的原作者版權聲明 |
 | 流量路徑 | Cloudflare 橘雲 → nginx_proxy（萬用憑證 `*.beyondsearchai.com`）→ `cpadoc:80` |
 | loopback | `127.0.0.1:58318` |
 | 程式碼 | `/home/orz99/zoo/CLIProxyAPIDocs.TW`（https clone，追蹤 `main`） |
