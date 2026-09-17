@@ -1,5 +1,6 @@
 import { defineConfig } from 'vitepress'
 import cnConfig from '../cn/config'
+import twConfig from '../tw/config'
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
@@ -244,6 +245,12 @@ export default defineConfig({
 			lang: 'zh-Hans',
 			link: '/cn',
 			themeConfig: cnConfig.themeConfig,
+		},
+		tw: {
+			label: '繁體中文',
+			lang: 'zh-Hant',
+			link: '/tw',
+			themeConfig: twConfig.themeConfig,
 		},
 		ru: {
 			label: 'Русский',
